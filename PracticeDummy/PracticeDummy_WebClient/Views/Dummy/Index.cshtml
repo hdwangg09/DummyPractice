@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Dummy Details";
+    var listDummy = ViewData["listDummy"] as IEnumerable<dynamic>;
+    var listMaster = ViewData["masters"] as List<DummyMaster>;
+}
+
+@* <form action="/dummy" method="get">
+    <div>
+        <label for="detailName">Detail Name:</label>
+        <input type="text" id="dummyName" name="dummyName">
+    </div>
+    <div style="margin-top: 10px">
+        <label for="masterId">Select a Master:</label>
+        <select style="width: 200px; id="masterId" name="masterId">
+            <option value="-1">-------All----------</option>
+            @foreach (var master in listMaster)
+            {
+                <option value="@master.MasterId">@master.MasterName</option>
+            }
+        </select>
+    </div>
+    <div>
+        <button type="submit">Fillter</button>
+    </div>
+</form> *@
+<div class="row">
+    <div class="col-md-4">
+        <form id="fillterForm" action="/dummy" method="get" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="detailName">Detail Name:</label>
+                <input type="text" id="dummyName" name="dummyName">
+                <div id="dummyNameError" style="color: red;"></div>
+            </div>
+            <div class="form-group">
+                <label for="masterId">Select a Master:</label>
+                <select style="width: 200px; id="masterId" name="masterId">
+                    <option value="-1">-------All----------</option>
+                    @foreach (var master in listMaster)
+                    {
+                        <option value="@master.MasterId">@master.MasterName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Filter" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<h1>Dummy Details</h1>
+
+@if (listDummy.Count() > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Master</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in listDummy)
+            {
+                <tr>
+                    <td>@item.detailId</td>
+                    <td>@item.detailName</td>
+                    <td>
+                        @item.masterName
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No dummy details found.</p>
+}
+<script>
+    function validateForm(){
+        var detailName = document.getElementById("dummyName").value;
+        var detailNameError = document.getElementById("dummyNameError");
+
+        if (detailName === "") {
+            detailNameError.innerHTML = "Cần nhập dummy name.";
+            return false;
+        } else {
+            detailNameError.innerHTML = "";
+        }
+        return true;
+    }
+</script>

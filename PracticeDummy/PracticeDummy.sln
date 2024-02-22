@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeDummy_API", "PracticeDummy\PracticeDummy_API.csproj", "{6EA02559-292A-419E-8280-C2E4107F7507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeDummy_WebClient", "PracticeDummy_WebClient\PracticeDummy_WebClient.csproj", "{C85AC73B-70D3-46C9-930B-1BDCFB117CD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EA02559-292A-419E-8280-C2E4107F7507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA02559-292A-419E-8280-C2E4107F7507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA02559-292A-419E-8280-C2E4107F7507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA02559-292A-419E-8280-C2E4107F7507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85AC73B-70D3-46C9-930B-1BDCFB117CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85AC73B-70D3-46C9-930B-1BDCFB117CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85AC73B-70D3-46C9-930B-1BDCFB117CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85AC73B-70D3-46C9-930B-1BDCFB117CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CB21A8E-176F-44AB-BA52-96D576DBFF41}
+	EndGlobalSection
+EndGlobal

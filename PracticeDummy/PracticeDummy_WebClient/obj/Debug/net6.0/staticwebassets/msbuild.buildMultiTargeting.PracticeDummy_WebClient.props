@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PracticeDummy_WebClient.props" />
+</Project>

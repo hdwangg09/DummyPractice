@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8TzD/4EK8nHI4xCcoJ23bhfNt8gY3Ang7CPltwXmnbRjryHOZeMbr2JGodA5AOXDN8F69aXvcedtjxj/Eu9lEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hdwan\\OneDrive\\Desktop\\PRN231\\Coding\\Class\\PracticeDummy\\PracticeDummy_WebClient\\PracticeDummy_WebClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hdwan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\hdwan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\hdwan\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\hdwan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\hdwan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}
